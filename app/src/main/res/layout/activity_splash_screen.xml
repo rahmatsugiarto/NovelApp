@@ -32,7 +32,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/novelapp"
+        android:text="@string/app_name"
         android:textColor="@color/white1"
         android:textSize="24sp"
         android:textStyle="bold"

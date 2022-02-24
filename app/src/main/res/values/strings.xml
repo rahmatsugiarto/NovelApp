@@ -8,8 +8,11 @@
     <string name="about">About</string>
     <string name="rahmat_sugiarto">Rahmat Sugiarto</string>
     <string name="email_about">Sugiartorahmat187@gmail.com</string>
-    <string name="novelapp">NovelApp</string>
     <string name="n">N</string>
+    <string name="detail_novel">Detail Novel</string>
+    <string name="share">Hey lihat Novel %1$s sangat menarik loh, klik link ini untuk melihatnya https://github.com/rahmatsugiarto/NovelApp</string>
+
+
 
     <string-array name="title">
         <item>Kambing Jantan</item>

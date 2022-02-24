@@ -31,6 +31,7 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_share"
                     app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/app_name"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
@@ -42,6 +43,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/app_name"
                     tools:src="@tools:sample/avatars" />
 
                 <TextView
@@ -76,14 +78,8 @@
 
             <TextView
                 android:id="@+id/tvDetail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                style="@style/detail_title"
                 android:text="@string/detail"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/view"
                 app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -100,30 +96,16 @@
 
             <TextView
                 android:id="@+id/tvDesc"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="start"
-                android:justificationMode="inter_word"
-                android:textAlignment="textStart"
-                android:textColor="@color/black"
-                android:textSize="20sp"
+                style="@style/detail_desc"
                 app:layout_constraintEnd_toEndOf="@id/view"
                 app:layout_constraintStart_toStartOf="@id/view"
                 app:layout_constraintTop_toTopOf="@id/view2"
-                tools:targetApi="o"
                 tools:text="Dari Jendela SMP adalah sebuah novel karya Mira W. yang diterbitkan pada 1983. Novel ini pernah diadaptasi menjadi film Biarkan Kami Bercinta dan sinetron Dari Jendela SMP." />
 
             <TextView
                 android:id="@+id/tvTitleSinopsis"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                style="@style/detail_title"
                 android:text="@string/sinopsis"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/view"
                 app:layout_constraintTop_toBottomOf="@id/tvDesc" />
 
@@ -140,21 +122,11 @@
 
             <TextView
                 android:id="@+id/tvSinopsisDesc"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="start"
-                android:justificationMode="inter_word"
-                android:textAlignment="textStart"
-                android:textColor="@color/black"
-                android:textSize="20sp"
+                style="@style/detail_desc"
                 app:layout_constraintEnd_toEndOf="@id/view"
                 app:layout_constraintStart_toStartOf="@id/view"
                 app:layout_constraintTop_toTopOf="@id/view3"
-                tools:targetApi="o"
-                tools:text="Dari Jendela SMP adalah sebuah novel karya Mira W. yang diterbitkan pada 1983. Novel ini pernah diadaptasi menjadi film Biarkan Kami Bercinta dan sinetron Dari Jendela SMP." />
-
-
+                tools:text="Menceritakan kisah seorang anak penjaga sekolah seorang janda. Joko masih SMP, pekerja keras, mandiri dan berotak cerdas. Dia sering di-bully karena seorang anak pembantu dan bersekolah di sekolah swasta. Sekolah milik Prapto kepala sekolah yang tegas, disiplin dan berwibawa. Tidak pandang bulu mau itu orang kaya, ataupun anak sendiri jika salah harus dihukum. Kekerasannya pada anaknya sehingga membuat anak-anaknya mempunyai kelainan, si sulung penakut Prapto juga pernah selingkuh dengan penjaga sekolah, lahirlah Joko yang semasa hidupnya bertanya siapa Bapaknya. Joko sekolah di tempat Bapaknya tapi tetap bayar. Joko sebelumnya sangat memuja kewibawaan Pak Prapto. Setelah dia mengetahui skandal dengan ibunya bahwa dia adalah anak kandung dari Prapto." />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

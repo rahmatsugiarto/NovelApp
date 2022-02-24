@@ -13,7 +13,7 @@ class DetailNovelActivity : AppCompatActivity() {
         binding = ActivityDetailNovelBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.title = "Detail Novel"
+        supportActionBar?.title = getString(R.string.detail_novel)
         val dataNovel = intent.getParcelableExtra<Novel>(DETAIL_NOVEL) as Novel
         Glide.with(this)
             .load(dataNovel.image)
@@ -25,7 +25,7 @@ class DetailNovelActivity : AppCompatActivity() {
             tvSinopsisDesc.text = dataNovel.sinopsis
         }
         binding.btnShare.setOnClickListener {
-            share("Hey lihat Novel ${dataNovel.title} sangat menarik loh, klik link ini untuk melihatnya https://github.com/rahmatsugiarto/NovelApp")
+            share(getString(R.string.share, dataNovel.title))
         }
     }
 

@@ -11,7 +11,7 @@ class AboutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.title = "About"
+        supportActionBar?.title = getString(R.string.about)
         Glide.with(this)
             .load(R.drawable.me)
             .circleCrop()
